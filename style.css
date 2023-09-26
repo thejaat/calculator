@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700&family=Roboto:wght@300;500;700&display=swap');
+
+*{
+    margin: 0;padding: 0;box-sizing: border-box;font-size: 62.5%;user-select: none;
+    /* font-family: 'Montserrat', sans-serif; */
+font-family: 'Roboto', sans-serif;
+}
+:root{
+    --orange: rgb(246,154,6);
+    --light-grey:rgb(159,159,159);
+    --dark-grey:rgb(49,49,49);
+
+}
+/* utility class */
+.orange{
+    background:  var(--orange);
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    outline: none;
+}
+.light_grey{
+background: var(--light-grey);
+}
+.dark_grey{
+    background:  var(--dark-grey);
+    color: #fff;
+}
+body{
+    background: #ddd;
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+}
+.container{
+    width: 35rem;
+}
+.calculator{
+    background: #fff;
+    padding: 4rem 2rem;
+    border-radius: 40px;
+}
+.calculator h1{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+.calculator input{
+text-justify: right;
+    height: 4rem;
+font-size: 1.6rem;
+padding-left: 2rem;
+padding-right: 2rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #ddd;
+    border-radius: 20px;
+}
+.button_area{
+    padding: 1rem 2rem;
+    margin-top:2rem ;
+display: grid;
+grid-template-columns: repeat(4,1fr);
+gap: 1rem;
+}
+button{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    font-size: 1.9rem;
+    font-weight: bold;
+    border: none;
+    margin: auto;
+    outline: none;
+    cursor: pointer;
+} 
+button:active{
+    background: none;
+}
+.zero{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 80%;
+    border-radius: 20px;
+    margin-left: 10px;
+}
